@@ -16,7 +16,7 @@ getUserData() async {
     );
     log('res: ${jsonDecode(response.body)}');
     if (response.statusCode == 200) {
-      return ModelClass.fromJson(jsonDecode(response.body));
+      return UserDeatailsClass.fromJson(jsonDecode(response.body));
     } else {
       throw Exception('Failed to load media');
     }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:seclob_task/Services/apimodel.dart';
@@ -15,7 +14,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  ModelClass? data;
+  UserDeatailsClass? data;
 
   @override
   void initState() {
@@ -71,7 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
               )),
           child: NavigationBar(
             labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
-            backgroundColor: Color(0xff1E2E5D),
+            backgroundColor:const Color(0xff1E2E5D),
             indicatorColor: Colors.transparent,
             destinations: [
               NavigationDestination(
@@ -114,9 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           height: 22.h,
                           width: 22.w,
                         ),
-                        SizedBox(
-                          height: 5,
-                        ),
+                        Gap(5.h),
                         Icon(
                           Icons.maximize,
                           color: Colors.white,
@@ -178,7 +175,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         fontWeight: FontWeight.w500,
                         fontFamily: "Poppins",
                         fontSize: 14.sp,
-                        color: Color(0xff1E3167)),
+                        color:const Color(0xff1E3167)),
                   ),
                   Gap(6.h),
                   Text(
@@ -241,13 +238,13 @@ class _ProfilePageState extends State<ProfilePage> {
                       fontWeight: FontWeight.w600,
                       fontFamily: "Poppins",
                       fontSize: 12.sp,
-                      color: Color(0xffA7ACD0)),
+                      color:const Color(0xffA7ACD0)),
                 ),
                 SizedBox(
                   width: 1,
                   height: 18,
                   child: VerticalDivider(
-                    color: Color(0xffA7ACD04F).withOpacity(.31),
+                    color:const Color(0xffA7ACD04F).withOpacity(.31),
                   ),
                 ),
                 Text(

@@ -21,7 +21,7 @@ class ProfileDetails extends StatelessWidget {
               fontWeight: FontWeight.w500,
               fontFamily: "Poppins",
               fontSize: 18.sp,
-              color: Color(0xff1E3167)),
+              color:const Color(0xff1E3167)),
         ),
         Text(
           textAlign: TextAlign.center,
@@ -30,7 +30,7 @@ class ProfileDetails extends StatelessWidget {
               fontWeight: FontWeight.w500,
               fontFamily: "Poppins",
               fontSize: 12.sp,
-              color: Color(0xff1E3167).withOpacity(.6)),
+              color:const Color(0xff1E3167).withOpacity(.6)),
         ),
       ],
     );

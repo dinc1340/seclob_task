@@ -1,12 +1,12 @@
-class ModelClass {
+class UserDeatailsClass {
   String? sts;
   String? msg;
   int? postCount;
   List<Media>? media;
 
-  ModelClass({this.sts, this.msg, this.postCount, this.media});
+  UserDeatailsClass({this.sts, this.msg, this.postCount, this.media});
 
-  ModelClass.fromJson(Map<String, dynamic> json) {
+  UserDeatailsClass.fromJson(Map<String, dynamic> json) {
     sts = json['sts'];
     msg = json['msg'];
     postCount = json['postCount'];
